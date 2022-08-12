@@ -1,0 +1,11 @@
+@url=http://localhost:1080
+
+
+### 注册账号
+POST {{url}}/bp
+Content-Type: application/json
+
+{
+  "username": "user3",
+  "password": "123456"
+}
