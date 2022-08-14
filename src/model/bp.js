@@ -7,20 +7,21 @@ const BpSchema = new mongoose.Schema({
   classList: {
     type: String,
   },
-  headers: {
+  parentClassList: {
     type: String,
-    select: false
   },
   innerText: {
     type: String,
   },
-  isFlag: {
+  deployType: {
+    type: String,
+  },
+  others: {
+    type: String,
+  },
+  isBpFlag: {
     type: Boolean,
     default: false
-  },
-  target: {
-    type: String,
-    select: false
   },
   createTime: {
     type: Date,

@@ -4,9 +4,28 @@ const AnswerSchema = new mongoose.Schema({
   ip: {
     type: String,
   },
-  answerData: {
+  eduType: {
     type: String,
-  }
+  },
+  vdiType: {
+    type: String,
+  },
+  role: {
+    type: String,
+  },
+  demand: {
+    type: String,
+  },
+  demandDetail: {
+    type: String,
+  },
+  advice: {
+    type: String,
+  },
+  contact: {
+    type: String,
+  },
+
 })
 
 // 建立用户数据库模型

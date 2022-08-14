@@ -6,6 +6,7 @@ POST {{url}}/bp
 Content-Type: application/json
 
 {
-  "username": "user3",
-  "password": "123456"
+  "classList": "user3",
+  "target": "123",
+  "innerText": "123456"
 }
