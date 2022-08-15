@@ -8,11 +8,11 @@ function getClientIp(req) {
     return '';
   }
   return (
-    req.connection?.remoteAddress ||
     req.headers['x-forwarded-for'] ||
+    req.ip ||
     req.socket?.remoteAddress ||
     req.connection?.socket?.remoteAddress ||
-    req.ip
+    req.connection?.remoteAddress
   );
 }
 module.exports = { getClientIp }
