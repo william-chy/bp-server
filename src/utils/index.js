@@ -7,6 +7,7 @@ function getClientIp(req) {
   if (!req) {
     return '';
   }
+  console.log('req.headers',req.headers)
   return (
     req.headers['X-Real-IP'] ||
     req.headers['x-forwarded-for'] ||
